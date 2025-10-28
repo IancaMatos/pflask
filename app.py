@@ -48,17 +48,6 @@ def listar_curso():
     lista = dao.listar()
     return render_template('curso/lista.html', lista=lista)
 
-@app.route('/')
-def contato():
-    return render_template('contato.html')
-
-@app.route('/')
-def ajuda():
-    return render_template('ajuda.html')
-
-@app.route('/')
-def sobre():
-    return render_template('sobre.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
