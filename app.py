@@ -49,15 +49,15 @@ def listar_curso():
     return render_template('curso/lista.html', lista=lista)
 
 @app.route('/')
-def home():
+def contato():
     return render_template('contato.html')
 
 @app.route('/')
-def home():
+def ajuda():
     return render_template('ajuda.html')
 
 @app.route('/')
-def home():
+def sobre():
     return render_template('sobre.html')
 
 if __name__ == '__main__':
